@@ -1,26 +1,37 @@
 # Third-Party Notices
 
-This project depends on third-party software, game binaries, and platform runtimes that are not included in this workspace.
+This repository's own source code is licensed under the MIT license in [LICENSE](LICENSE).
+
+The items below are not relicensed by this repository. They remain under their own upstream terms.
 
 ## Going Medieval
 
+- Type: proprietary game dependency
+- Role: local game installation required for build and runtime
+- Redistribution status: not redistributed by this repository
 - Developer: Foxy Voxel
 - Developer page: https://foxyvoxel.io/games/going-medieval/
 - Publisher: Mythwright
 - Official game page: https://mythwright.com/games/going-medieval
 - Publisher terms: https://mythwright.com/terms-of-use
 
-Notes:
-- Going Medieval is not distributed with this project.
-- You need your own licensed local installation to build and use this mod.
-
 ## BepInEx 5
 
-- Project page: https://github.com/BepInEx/BepInEx
+- Type: plugin framework dependency
+- Role: runtime loader / plugin host
+- Upstream license: LGPL-2.1
+- Official project page: https://github.com/BepInEx/BepInEx
 - Documentation: https://docs.bepinex.dev/
-- License: see the upstream BepInEx repository for current license terms.
 
 ## Windows
 
-- Product page: https://www.microsoft.com/en-us/windows/
-- License terms are governed by Microsoft.
+- Type: platform dependency
+- Role: supported operating system for this repository and mod build flow
+- Upstream terms: proprietary Microsoft software terms
+- Official page: https://www.microsoft.com/en-us/windows/
+
+## Notes
+
+- This repository does not include game binaries, copied game assets, or decompiled game source.
+- Building the project requires your own licensed local installation of Going Medieval.
+- Publishing this repository under MIT does not override the game EULA or any third-party license listed above.
