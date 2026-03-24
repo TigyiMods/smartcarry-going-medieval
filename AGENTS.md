@@ -35,6 +35,16 @@ Co-authored-by: Codex (OpenAI) <noreply@openai.com>
 - Keep `PluginInfo.Version`, changelog headings, Git tags, GitHub release titles, and release asset names aligned to the same version string.
 - Prefer normal patch/minor bumps to normalize formatting going forward; do not rewrite already-published versions only to change formatting.
 
+## Release Packaging Convention
+
+- Release ZIPs should contain only the installable plugin payload and small user-facing text files.
+- For this repository, the expected ZIP contents are:
+  - `BepInEx/plugins/SmartCarry.Runtime/SmartCarry.Runtime.dll`
+  - `LICENSE.txt`
+  - `README.txt`
+- `README.txt` in the release asset should be a short install-focused text, not the full repository README.
+- Keep the release asset structure stable across versions unless there is a deliberate packaging change.
+
 ## Validation Expectations
 
 - Run `dotnet build` before committing code changes.
